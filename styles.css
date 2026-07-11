@@ -1,0 +1,101 @@
+/* Reset básico para que se vea igual en todos los navegadores */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  /* Flexbox para centrar la tarjeta principal en la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de los botones */
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Por si se ve en pantallas muy pequeñas */
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  /* Suaviza los cambios de color y tamaño */
+  transition: all 0.2s ease-in-out; 
+}
+
+/* Efecto al pasar el mouse (solo si el botón no está deshabilitado) */
+button:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+/* Estilo para cuando alguien llega a 5 puntos y los botones se apagan */
+button:disabled {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.tablero {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+#resultado-ronda {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  min-height: 30px; /* Evita que el diseño salte si el texto es corto */
+}
+
+#marcador {
+  font-size: 1.5rem;
+  color: #3b82f6;
+}
+
+/* Estilo específico para el botón que creamos con JavaScript */
+#reinicio {
+  margin-top: 1.5rem;
+  background-color: #10b981;
+}
+
+#reinicio:hover {
+  background-color: #059669;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
+}
