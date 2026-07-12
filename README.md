@@ -2,7 +2,7 @@
 
 Este es el proyecto del **Foundations** de [The Odin Project](https://www.theodinproject.com/).
 
-[**Ver el proyecto en vivo (Live Preview)**](URL_DE_TU_GITHUB_PAGES_AQUI)
+[**Ver el proyecto en vivo (Live Preview)**](https://tomas2439.github.io/piedra-papel-tijera/)
 
 ## 📝 Sobre el proyecto
 
